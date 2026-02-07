@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "email": "admin@mail.com",
+      "password": "123"
+    },
+    {
+      "email": "ai@gmail.com",
+      "password": "12345"
+    }
+  ],
+  "transactions": [],
+  "targets": [
+    {
+      "nama": "Dana Darurat",
+      "goal": 5000000,
+      "terkumpul": 1200000
+    },
+    {
+      "nama": "Tabungan iPhone",
+      "goal": 15000000,
+      "terkumpul": 15000000
+    }
+  ]
+}
