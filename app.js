@@ -128,3 +128,4 @@ app.listen(PORT, () => {
     console.log(`Server jalan di http://localhost:${PORT}`);
     console.log(`Copyright by 23552011403_Ai Nurul Hidayah`);
 });
+module.exports = app;
