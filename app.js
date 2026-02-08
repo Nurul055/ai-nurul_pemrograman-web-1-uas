@@ -14,7 +14,7 @@ const db = admin.firestore();
 const app = express();
 
 // 2. Konfigurasi Express & View Engine
-app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'router/Frontend/views'));
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
@@ -116,4 +116,5 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 module.exports = app; 
+
 
