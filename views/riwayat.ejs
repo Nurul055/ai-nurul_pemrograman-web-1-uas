@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Transaksi</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>📝 Tambah Transaksi</h2>
+        <div class="card">
+            <form action="/transaksi/tambah" method="POST">
+                <div style="margin-bottom: 10px;">
+                    <label>Nama Transaksi</label>
+                    <input type="text" name="nama" placeholder="Contoh: Bayar Listrik" required style="width: 100%; padding: 8px;">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label>Nominal (Rp)</label>
+                    <input type="number" name="nominal" placeholder="Contoh: 50000" required style="width: 100%; padding: 8px;">
+                </div>
+                <div style="margin-bottom: 10px;">
+                    <label>Jenis Transaksi</label>
+                    <select name="tipe" style="width: 100%; padding: 8px;">
+                        <option value="masuk">Pemasukan (Uang Masuk)</option>
+                        <option value="keluar">Pengeluaran (Uang Keluar)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Simpan Transaksi</button>
+                <a href="/dashboard" style="margin-left: 10px;">Batal</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
